@@ -1777,10 +1777,6 @@ def shell():
     if args.version:
         version()
 
-    if not args.download and not args.upload:
-        raise SpeedtestCLIError('Cannot supply both --no-download and '
-                                '--no-upload')
-
     if len(args.csv_delimiter) != 1:
         raise SpeedtestCLIError('--csv-delimiter must be a single character')
 
